@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Nigam - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="piyushlogo.png" alt="Logo">
+        </div>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Hello, I'm Piyush Nigam</h2>
+            <p>Welcome to my portfolio website.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm <strong>Piyush Nigam</strong>, a passionate <strong>web developer</strong> based in <strong>Lucknow, India</strong>. I have a keen interest in <strong>front-end development</strong> and <strong>UI/UX design</strong>.</p>
+            <p>With <strong>1 year</strong> of experience in web development, I've worked on various projects ranging from <strong>responsive websites</strong> to <strong>interactive web applications</strong>. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+            <p>When I'm not coding, you'll find me exploring new technologies, reading tech blogs, or enjoying a good cup of coffee while sketching out new ideas for my next project.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar" data-skill-level="90">
+                    <div class="skill-level">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar" data-skill-level="85">
+                    <div class="skill-level">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar" data-skill-level="75">
+                    <div class="skill-level">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+                <div class="skill-bar" data-skill-level="70">
+                    <div class="skill-level">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar" data-skill-level="65">
+                    <div class="skill-level">65%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualifications" class="qualifications">
+        <div class="container">
+            <h2>Qualifications</h2>
+            <ul>
+                <li><strong>Bachelor of Computer Applications</strong> - SRMU University, 2023</li>
+                <li><strong>Front-End Web Development Certificate</strong> - Online Courses, 2024</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Piyush Nigam. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically set the skill bar width based on the data attribute
+        document.querySelectorAll('.skill-bar').forEach(skillBar => {
+            const level = skillBar.getAttribute('data-skill-level');
+            skillBar.querySelector('.skill-level').style.width = level + '%';
+        });
+    </script>
+</body>
+</html>
